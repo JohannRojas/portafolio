@@ -1,0 +1,54 @@
+---
+import ExperienceItem from './ExperienceItem.astro'
+const EXPERIENCE = [
+  {
+    title: 'Senior Frontend Developer',
+    company: 'Colmena Seguros',
+    date: 'Actualmente...',
+    description:
+      'Responsable de la plataforma, componentes y utilidades para la creación de una plataforma que permite asegurar a mas de 10.000 miPymes de manera digital. Mejora de un 30% en la entrega de software. Implantando medidas de integración y despliegue continuo',
+  },
+  {
+    title: 'Senior React Native Developer',
+    company: 'Indra Colombia',
+    date: '2022',
+    description:
+      'Desarrollo de experiencia digital en React Native para la aplicación de medicina prepagada de Keralty. Agregando el módulo de Mi Salud Digital, que permite a los usuarios escanear sus signos vitales, ejercicios de telerehabilitación aisstidos por IA, solicitar y gestionar citas, entre otros.',
+    link: 'https://www.youtube.com/watch?v=aSHf60rURsY',
+  },
+  {
+    title: 'Frontend React Developer',
+    company: 'Indra Colombia',
+    date: '2021',
+    description:
+      'Desarrollo y mantenimiento de módulo de contravenciones para ventanilla única de servicio de la secretaria de movilidad de Bogotá. Donde se gestiona el pago de multas de tránsito, fotomultas, comparendos, entre otros por parte de abogados de la entidad.',
+    link: 'https://www.ventanillamovilidad.com.co/',
+  },
+  {
+    title: 'Associate Consultant',
+    company: 'Sophos Solutions',
+    date: '2020',
+    description:
+      'Creación de un sistema de otorgamiento de créditos digitales a particulares. Donde se gestiona el flujo de solicitud, aprobación y desembolso de créditos. Se logró reducir el tiempo de aprobación de varios días a 15 minutos en promedio.',
+    link: 'https://www.tuya.com.co/creditos-digitales',
+  },
+  {
+    title: 'Frontend Developer',
+    company: 'Konrradf S.A.S.',
+    date: '2019',
+    description:
+      'Desarrollo, mantenimiento y migración de un sistema de gestión de proyectos de construcción y avalúos. Donde se gestiona el flujo de cotización, aprobación, ejecución y cierre de proyectos. Se logró reducir el tiempo de cotización de varios dias a minutos. ',
+    link: 'https://www.konrradf.com/amo.redes-hidraulicas-y-sanitarias',
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
